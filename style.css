@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("norse-bold-webfont.woff2") format("woff2");
+}
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+}
+
+.left {
+  height: 100%;
+  width: 40%;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  background-color: black;
+  opacity: 40%;
+  position: absolute;
+  top: 150px;
+  z-index: 2;
+}
+
+.overlay p {
+  font-family: "Norse-Bold";
+  color: white;
+  z-index: 2;
+  font-size: 3em;
+}
+
+#logo {
+  width: auto;
+  height: 80%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.leaf-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+figcaption {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: white;
+  font-size: 0.75em;
+  font-weight: normal;
+}
+
+figcaption a {
+  color: white;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.right p {
+  width: 80%;
+  align-self: center;
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.top {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
+}
+
+.middle {
+  flex: 1;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+label,
+input {
+  display: block;
+}
+
+.formrow {
+  display: flex;
+}
+
+input {
+  width: 50%;
+}
+
+.bottom {
+  flex: 1;
+  background-color: #f9fafb;
+}
