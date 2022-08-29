@@ -155,6 +155,12 @@ input:focus {
   box-shadow:rgba(0, 0, 0, 0.15) 2px 2px 2px 0px;
 }
 
+input:focus:invalid {
+  border: 1px solid #3964DC;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  outline: none;
+  }
+
 .bottom {
   flex: 1;
   background-color: #f9fafb;
