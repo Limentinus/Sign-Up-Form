@@ -6,73 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="/style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
+
     <div class="left">
       <div class="overlay">
         <img src="/files/odin-lined.png" alt="Odin Logo" id="logo" />
         <p class="overlay-text">ODIN</p>
       </div>
 
-      <img src="/files/ferns.webp" alt="Fern Leaves" class="leaf-img" />
+      <!-- <img src="/files/ferns.webp" alt="Fern Leaves" class="leaf-img" /> -->
       <figcaption class="leaf-cap">
         Photo by <a href="">Halie West</a> on <a href="">Unsplash</a>
       </figcaption>
     </div>
+
     <div class="right">
-      <div class="top">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. <br />
-          Sign up <em>now</em> to get started.
-        </p>
-        <p>You <em>know</em>you want to.</p>
-      </div>
+      
+      
+        <div class="textbox">
+
+          <p>
+            This is not a real online service! You know you need something<br>like
+            this in your life to help you realize your deepest dreams. <br />
+            Sign up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>  
+      
+
       <div class="middle">
         <h2 class="formhead">Let's do this!</h2>
         <form action="">
-          <fieldset>
             <div class="formrow">
               <div class="formitem">
                 <label for="first-name">FIRST NAME</label>
-                <input id="first-name" name="first-name" type="text" />
+                <input id="first-name" name="first-name" type="text" required />
               </div>
               <div class="formitem">
                 <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name" />
+                <input type="text" name="last-name" id="last-name" required />
               </div>
             </div>
             <div class="formrow">
               <div class="formitem">
                 <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="formitem">
+                <label for="phone">PHONE NUMBER</label>
+                <input type="tel" name="phone" id="phone" required />
               </div>
             </div>
-              <div class="formrow">
-                <div class="formitem">
-                  <label for="phone">PHONE</label>
-                  <input type="number" name="phone" id="phone" />
-                </div>
-              </div>
-            </div>
+              
             <div class="formrow">
               <div class="formitem">
                 <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" />
+                <input type="password" name="password" id="password" required />
               </div>
               <div class="formitem">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="text" id="confirm-password" />
+                <input type="password" id="confirm-password" required />
               </div>
             </div>
-          </fieldset>
         </form>
       </div>
-      <div class="bottom">
+
+      
         <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="">Log in</a></p>
-      </div>
-    </div>
+        <p class="button-text">Already have an account? <a href="">Log in</a></p>
+      
+    
   </body>
 </html>
